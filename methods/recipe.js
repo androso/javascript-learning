@@ -13,7 +13,6 @@ if (answer.toUpperCase() === "YES") {
 } else {
    alert("Cool");
 }
-
 function getText (object, text) {
   do {
     object = prompt(text);
