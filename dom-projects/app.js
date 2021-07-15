@@ -5,7 +5,6 @@ const contentEl = document.querySelector(".content");
 const hamburgerBarsEl = document.querySelectorAll("span");
 
 function toggleNav () {
-    console.log("Working!");
     navEl.classList.toggle("open");
     contentEl.classList.toggle("shift");
     animateMenu();
