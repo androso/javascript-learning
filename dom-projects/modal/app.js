@@ -17,6 +17,3 @@ function outsideClick (event) {
 openModalTriggerEl.addEventListener("click", main);
 closeModalTriggerEl.addEventListener("click", main);
 window.addEventListener("click", outsideClick);
-
-
-  
