@@ -20,5 +20,34 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 16px solid aliceblue;
+    border: 2px solid rgb(207, 212, 216);
+    background-color: rgb(212, 229, 240, 0.6);
+    backdrop-filter: blur(7px);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hand {
+    width: 50%;
+    height: 3px;
+    border-radius: 1px;
+    /* margin-bottom: 5px; */
+    background-color: #688C8A;
+    position: absolute;
+    right: 50%;  
+    transform-origin: right;
+}
+.hand.hour-hand {
+    width: 30%;
+    transform: rotate(30deg);
+    
+}
+.hand.minute-hand {
+    width: 45%;
+    transform: rotate(6deg);
+}
+.hand.second-hand {
+    opacity: 0;
+    transform: rotate(0.9deg)
 }
