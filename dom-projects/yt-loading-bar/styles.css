@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.loading-bar {
+	background-color: black;
+	width: 100%;
+    
+}
+.loading-bar__item {
+	width: 0%;
+	height: 4px;
+	background: red;
+    border-radius: 4px;
+}
+.buttons {
+	background: #333;
+	height: calc(100vh - 4px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	cursor: pointer;
+	padding: 10px 20px; 
+	margin-right: 5px; 
+	border-radius: 8px;
+	border: none;
+	background: rgb(240, 248, 255);
+}
