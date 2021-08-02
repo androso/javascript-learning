@@ -20,14 +20,33 @@ main {
 	height: 500px;
 }
 .timer__header {
+	height: 10%;
 	text-align: center;
 	color: white;
 	text-decoration: underline;
+
 }
 .timer__body {
-	margin-top: 6rem;
+	height: 58%;
+	/* margin-top: 6rem; */
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+.timer__footer {
+	height: 32%;
+}
+.timer__footer .input {
+	height: 100%; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.timer__footer input[type="text"] {
+	width: 40%; 
+	padding: 10px 10px ;
+	border-radius: 10px; 
+	border: none; 
 }
 .timer__day,
 .timer__hour,
