@@ -4,7 +4,7 @@ const timerMinsEl = document.querySelector(".timer__mins");
 const timerSecEl = document.querySelector(".timer__sec");
 const endDateInputEl = document.querySelector("#endDateInput");
 
-function countDownTimer(date) {
+function countDownTimer(event, date) {
     event.target.setAttribute("disabled", "");
     const second = 1000, //1000ms in a s
 	minute = second * 60,
@@ -60,7 +60,7 @@ function countDownTimer(date) {
 }
 function getDate (event) {
     if (event.code === "Enter") {
-        countDownTimer(endDateInputEl.value);
+        countDownTimer(event, endDateInputEl.value);
     }
 }
 endDateInputEl.addEventListener("keydown", getDate);
